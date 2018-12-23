@@ -1,14 +1,27 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "",
+  "description": "Deploy a hello world NodeJs application to a container using Jenkins.",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.65.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moralerr/NodeJS-hello-world.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "bugs": {
+    "url": "https://github.com/moralerr/NodeJS-hello-world/issues"
+  },
+  "homepage": "https://github.com/moralerr/NodeJS-hello-world#readme"
 }
