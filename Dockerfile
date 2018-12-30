@@ -1,7 +1,7 @@
-FROM node:7
-WORKDIR /app
-COPY package.json /app
+FROM node:8
+WORKDIR usr/src/app
+COPY package*.json ./
 RUN npm install
-COPY . /app
-CMD node index.js
-EXPOSE 8082
+COPY . .
+CMD [ "npm", "start"]
+EXPOSE 8080
